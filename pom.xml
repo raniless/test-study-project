@@ -41,5 +41,11 @@
             <version>1.4</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>9.4.40.v20210413</version>
+        </dependency>
     </dependencies>
 </project>
