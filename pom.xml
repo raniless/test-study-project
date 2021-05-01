@@ -68,4 +68,21 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <developers>
+        <developer>
+            <name>Hyoki Min</name>
+            <id>raniless</id>
+            <organization>Hyoks</organization>
+            <roles>
+                <role>Java Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <description>pom.xml description test</description>
+    <organization>
+        <name>name</name>
+        <url>http://localhost:8080</url>
+    </organization>
+    <inceptionYear>2021</inceptionYear>
 </project>
