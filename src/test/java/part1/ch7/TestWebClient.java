@@ -19,4 +19,27 @@ public class TestWebClient {
         String result = client.getContent(url);
         assertEquals("It works", result);
     }
+
+    @Test
+    public void testGetContentOk2() throws Exception {
+        MockConnectionFactory mockConnectionFactory = new MockConnectionFactory();
+        mockConnectionFactory.setInputStream(new ByteArrayInputStream("It works".getBytes()));
+
+        WebClientUsingClassFactory client = new WebClientUsingClassFactory();
+        String result = client.getContent(mockConnectionFactory);
+        assertEquals("It works", result);
+    }
+
+    @Test
+    public void testGetContentOk3() throws Exception {
+        MockConnectionFactory mockConnectionFactory = new MockConnectionFactory();
+        MockInputStream mockInputStream = new MockInputStream();
+        mockInputStream.setBuffer("It works");
+        mockConnectionFactory.setInputStream(mockInputStream);
+
+        WebClientUsingClassFactory client = new WebClientUsingClassFactory();
+        String result = client.getContent(mockConnectionFactory);
+        assertEquals("It works", result);
+        mockInputStream.verify();
+    }
 }
