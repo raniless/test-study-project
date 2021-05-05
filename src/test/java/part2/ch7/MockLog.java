@@ -1,4 +1,4 @@
-package part1.ch7;
+package part2.ch7;
 
 import org.apache.commons.logging.Log;
 

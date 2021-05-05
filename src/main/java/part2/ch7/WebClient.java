@@ -1,4 +1,4 @@
-package part1.ch6;
+package part2.ch7;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +11,8 @@ public class WebClient {
         StringBuffer content = new StringBuffer();
 
         try {
-            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+            //Refactoring
+            HttpURLConnection connection = createHttpURLConnection(url);
             connection.setDoInput(true);
             InputStream is = connection.getInputStream();
             byte[] buffer = new byte[2048];
@@ -25,5 +26,9 @@ public class WebClient {
         }
 
         return content.toString();
+    }
+
+    protected HttpURLConnection createHttpURLConnection(URL url) throws IOException {
+        return (HttpURLConnection)url.openConnection();
     }
 }

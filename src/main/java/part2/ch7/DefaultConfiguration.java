@@ -1,4 +1,4 @@
-package part1.ch7;
+package part2.ch7;
 
 public class DefaultConfiguration implements Configuration {
     public DefaultConfiguration(String configurationName) {

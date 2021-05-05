@@ -1,4 +1,4 @@
-package part1.ch6;
+package part2.ch6;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package part1.ch6;
+package part2.ch6;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
